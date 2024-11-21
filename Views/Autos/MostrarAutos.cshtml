@@ -34,6 +34,7 @@
             height: 100%; /* Asegura que las tarjetas no se expandan */
             position: relative; /* Para posicionar el menú de opciones */
             overflow: hidden; /* Asegura que el menú no sobresalga */
+
         }
 
         .card:hover {
@@ -46,6 +47,11 @@
             height: 200px; /* Ajusta la altura para hacerla más pequeña */
             object-fit: cover; /* Mantiene el aspecto correcto de la imagen */
             border-radius: 15px 15px 0 0;
+        }
+
+        .card a {
+            text-decoration: none; /* Quita el subrayado */
+            color: inherit; /* Mantiene el color del texto */
         }
 
         .card-body {
