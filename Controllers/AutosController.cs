@@ -88,6 +88,10 @@ namespace ProyectoFinalTecnicas.Controllers
 
             return View(nuevoAuto);
         }
+
+        
+
+
         public IActionResult MostrarAutos()
         {
             List<Auto> autos = new List<Auto>();

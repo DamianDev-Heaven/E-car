@@ -1,0 +1,201 @@
+﻿@model ProyectoFinalTecnicas.Models.Auto
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Factura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Detalles del Auto -->
+        <div class="detalle-auto">
+            <h3>Detalles del Auto</h3>
+            <div class="card">
+                <img src="@Model.Imagen" class="card-img-top" alt="Imagen del Auto" onerror="this.onerror=null; this.src='/images/default-car.jpg'">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Marca - @Model.Modelo</h5>
+                    <p><strong>Placa:</strong> @Model.Placa</p>
+                    <p><strong>Tipo:</strong> @Model.Tipo</p>
+                    <p><strong>Precio por Día:</strong> $@Model.Price</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario para Generar la Factura -->
+        <div class="formulario-factura">
+            <h3>Generar Factura</h3>
+            <form method="post" action="@Url.Action("GenerarFactura", "Factura")">
+                <div class="mb-3">
+                    <label for="cliente" class="form-label">Cliente</label>
+                    <input type="text" class="form-control" id="cliente" name="cliente" required>
+                    <input type="hidden" name="id_cliente" id="id_cliente" />
+                </div>
+                <div class="mb-3">
+                    <label for="empleado" class="form-label">Empleado</label>
+                    <input type="text" class="form-control" id="empleado" name="empleado" required>
+                    <input type="hidden" name="id_empleado" id="id_empleado" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de Renta</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha" value="@DateTime.Now.ToString("yyyy-MM-dd")" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dias" class="form-label">Cantidad de Días a Rentar</label>
+                    <input type="number" class="form-control" id="dias" name="dias" value="1" min="1" required>
+                </div>
+
+                <!-- Campos de Cálculo (Solo Lectura) -->
+                <div class="mb-3">
+                    <label for="subtotal" class="form-label">Subtotal</label>
+                    <input type="text" class="form-control" id="subtotal" name="subtotal" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="iva" class="form-label">IVA (16%)</label>
+                    <input type="text" class="form-control" id="iva" name="iva" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="total" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="total" name="total" readonly>
+                </div>
+
+                <!-- Datos Ocultos del Auto -->
+                <input type="hidden" name="id_auto" value="@Model.IdAuto" />
+                <input type="hidden" name="precio_dia" value="@Model.Price" />
+
+                <button type="submit" class="btn btn-primary">Generar Factura</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $("#empleado").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("AutocompletarEmpleado", "Factura")',
+                    data: { term: request.term },
+                    success: function (data) {
+                        response(data.map(function (item) {
+                            return { label: item.label, value: item.label, id: item.id };
+                        }));
+                    }
+                });
+            },
+            select: function (event, ui) {
+                $('#id_empleado').val(ui.item.id);  // Establecer ID del empleado
+            }
+        });
+
+        $("#cliente").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("AutocompletarCliente", "Factura")',
+                    data: { term: request.term },
+                    success: function (data) {
+                        response(data.map(function (item) {
+                            return { label: item.label, value: item.label, id: item.id };
+                        }));
+                    }
+                });
+            },
+            select: function (event, ui) {
+                $('#id_cliente').val(ui.item.id);  // Establecer ID del cliente
+            }
+        });
+
+        // Calcular los valores de la factura en tiempo real
+        $("#dias").on('input', function () {
+            var precioDia = parseFloat($("input[name='precio_dia']").val());
+            var dias = parseInt($("#dias").val());
+
+            if (isNaN(dias) || dias < 1) {
+                dias = 1;
+            }
+
+            var subtotal = precioDia * dias;
+            var iva = subtotal * 0.16;
+            var total = subtotal + iva;
+
+            $("#subtotal").val(subtotal.toFixed(2));
+            $("#iva").val(iva.toFixed(2));
+            $("#total").val(total.toFixed(2));
+        });
+
+        $(document).ready(function () {
+            $("#dias").trigger('input');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .detalle-auto {
+        width: 60%;
+    }
+
+    .formulario-factura {
+        width: 35%;
+        margin-left: 20px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .formulario-factura h3 {
+        margin-bottom: 20px;
+    }
+
+    .formulario-factura .form-control {
+        margin-bottom: 15px;
+    }
+
+    @@media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .detalle-auto,
+        .formulario-factura {
+            width: 100%;
+        }
+
+        .formulario-factura {
+            margin-left: 0;
+        }
+    }
+</style>

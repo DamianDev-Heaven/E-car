@@ -194,3 +194,4 @@ C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas
 C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.pdb
 C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.genruntimeconfig.cache
 C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ref\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.sourcelink.json
