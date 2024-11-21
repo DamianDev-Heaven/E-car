@@ -1,0 +1,409 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProyectoFinalTecnicas.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProyectoFinalTecnicas.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\Imagen2222.png",
+      "PackagePath": "staticwebassets\\css\\images\\Imagen2222.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\auctions.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\auctions.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\carro1.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\carro1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\carro2.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\carro2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\carro3.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\carro3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\carroBanner.jpeg",
+      "PackagePath": "staticwebassets\\css\\images\\carroBanner.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\hyunday.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\hyunday.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\mazda.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\mazda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\subaru.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\subaru.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\toyota.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\toyota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\37e94693-b782-4926-b07d-8bdc0e96d6b2_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\37e94693-b782-4926-b07d-8bdc0e96d6b2_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\5cc927e7-1775-41ed-afcc-9df700ceec87_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\5cc927e7-1775-41ed-afcc-9df700ceec87_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\6acbe659-dac9-4c36-af83-ec522b72cc4a_Porsche-935-82.png",
+      "PackagePath": "staticwebassets\\images\\6acbe659-dac9-4c36-af83-ec522b72cc4a_Porsche-935-82.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\7564408a-f9ae-466c-8e9e-15619ceec8a8_Ferrari.jpg",
+      "PackagePath": "staticwebassets\\images\\7564408a-f9ae-466c-8e9e-15619ceec8a8_Ferrari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\7fc8b408-5c53-4b6c-a5d7-839907cce5f2_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png",
+      "PackagePath": "staticwebassets\\images\\7fc8b408-5c53-4b6c-a5d7-839907cce5f2_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\951e6816-fcd4-43db-8836-5ee3c2abc7ab_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png",
+      "PackagePath": "staticwebassets\\images\\951e6816-fcd4-43db-8836-5ee3c2abc7ab_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\Imagen2222.png",
+      "PackagePath": "staticwebassets\\images\\Imagen2222.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\a7886b22-4bcf-4a7a-adff-b09562944dbe_Tesla_Model_X_2021-01@2x.jpg",
+      "PackagePath": "staticwebassets\\images\\a7886b22-4bcf-4a7a-adff-b09562944dbe_Tesla_Model_X_2021-01@2x.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\a7a667be-5c15-45f1-bd26-637517162a2e_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png",
+      "PackagePath": "staticwebassets\\images\\a7a667be-5c15-45f1-bd26-637517162a2e_2024-ferrari-sf90-xx-stradale-110-654a6690401bb.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\auctions.jpg",
+      "PackagePath": "staticwebassets\\images\\auctions.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\bc1f60e7-8207-4eca-a98d-cfdbbc696ed3_Ferrari.jpg",
+      "PackagePath": "staticwebassets\\images\\bc1f60e7-8207-4eca-a98d-cfdbbc696ed3_Ferrari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\carro1.jpg",
+      "PackagePath": "staticwebassets\\images\\carro1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\carro2.jpg",
+      "PackagePath": "staticwebassets\\images\\carro2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\carro3.jpg",
+      "PackagePath": "staticwebassets\\images\\carro3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\carroBanner.jpeg",
+      "PackagePath": "staticwebassets\\images\\carroBanner.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\d71c554e-9acf-4a59-90b3-cfdd18875af6_Tesla_Model_X_2021-01@2x.jpg",
+      "PackagePath": "staticwebassets\\images\\d71c554e-9acf-4a59-90b3-cfdd18875af6_Tesla_Model_X_2021-01@2x.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\dad251f5-a350-4c50-bb3c-9115d586e392_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\dad251f5-a350-4c50-bb3c-9115d586e392_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\e119fc23-3bb7-42db-a002-faa09fc9c1c8_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\e119fc23-3bb7-42db-a002-faa09fc9c1c8_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\e13797bb-25c8-4b55-a0be-bc8f55af6dc2_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\e13797bb-25c8-4b55-a0be-bc8f55af6dc2_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\ed002927-a765-4013-bb31-3f05abb1b80e_Audi.jpg",
+      "PackagePath": "staticwebassets\\images\\ed002927-a765-4013-bb31-3f05abb1b80e_Audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\fe6d9e23-fea4-427f-ae08-d9dfaaba3a37_maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\images\\fe6d9e23-fea4-427f-ae08-d9dfaaba3a37_maxresdefault.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\hyunday.jpg",
+      "PackagePath": "staticwebassets\\images\\hyunday.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\mazda.jpg",
+      "PackagePath": "staticwebassets\\images\\mazda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\subaru.jpg",
+      "PackagePath": "staticwebassets\\images\\subaru.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\toyota.jpg",
+      "PackagePath": "staticwebassets\\images\\toyota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProyectoFinalTecnicas.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProyectoFinalTecnicas.props",
+      "PackagePath": "build\\ProyectoFinalTecnicas.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProyectoFinalTecnicas.props",
+      "PackagePath": "buildMultiTargeting\\ProyectoFinalTecnicas.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProyectoFinalTecnicas.props",
+      "PackagePath": "buildTransitive\\ProyectoFinalTecnicas.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

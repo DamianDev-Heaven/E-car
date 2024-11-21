@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Panel de Administración de Empleados";
+}
+
+<div class="container my-5">
+    <!-- Header flotante -->
+    <div class="bg-primary text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+        <h1>@ViewData["Title"]</h1>
+        <p>Todos los empleados contratados con sus respectivos datos</p>
+    </div>
+
+    <!-- Mensajes de alerta -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success text-center">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger text-center">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <!-- Tabla de empleados -->
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Cargo</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var empleado in Model)
+                {
+                    <tr>
+                        <td>@empleado.Nombre</td>
+                        <td>@empleado.Telefono</td>
+                        <td>@empleado.Cargo</td>
+                        <td>@empleado.Email</td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = empleado.IdEmpleado })"
+                               class="btn btn-outline-primary btn-sm me-2">
+                                <i class="bi bi-pencil"></i> Editar
+                            </a>
+                            <form asp-action="Delete" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@empleado.IdEmpleado" />
+                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Botón agregar -->
+    <div class="text-end">
+        <a href="@Url.Action("Create", "Empleado")" class="btn btn-primary btn-lg">
+            <i class="bi bi-person-plus-fill"></i> Nuevo Empleado
+        </a>
+    </div>
+</div>
+
+<!-- Estilos personalizados -->
+<style>
+    body {
+        background-color: #f4f4f9;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #e8f4ff;
+    }
+
+    .btn-outline-primary {
+        border-color: #007bff;
+        color: #007bff;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+    .btn-outline-danger {
+        border-color: #dc3545;
+        color: #dc3545;
+    }
+
+        .btn-outline-danger:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+
+    .btn-primary {
+        background-color: #0056b3;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #004085;
+        }
+
+    .alert {
+        max-width: 75%;
+        margin: auto;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

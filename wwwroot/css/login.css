@@ -1,0 +1,82 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+/* Eliminar márgenes y padding del body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(black, #b200ff ) !important;
+}
+
+/* Hacer que el header esté fijo en la parte superior */
+header {
+    
+}
+
+/* Ajuste para que el formulario no se superponga con el header */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+   /* min-height: calc(100vh - 100px);*/
+}
+
+.register-form-container {
+    text-align: center;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+    .register-form-container input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 13px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+
+    .register-form-container h2 {
+        color: white;
+    }
+
+    .register-form-container .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+
+        .register-form-container .message a {
+            color: #289bb8;
+            text-decoration: none;
+        }
+
+.btn-register {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fabeef;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    border: 1px solid #fabeef !important;
+    background: transparent;
+    border-radius: 5px;
+}
+
+    .btn-register:hover {
+        background: #fabeef;
+        color: #fff;
+        box-shadow: 0 0 5px #fabeef, 0 0 25px #fabeef, 0 0 50px #fabeef, 0 0 100px #fabeef !important;
+    }

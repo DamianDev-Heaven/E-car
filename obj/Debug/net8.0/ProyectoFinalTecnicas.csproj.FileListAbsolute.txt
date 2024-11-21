@@ -1,0 +1,196 @@
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.Development.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.staticwebassets.runtime.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.exe
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.deps.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.runtimeconfig.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.pdb
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\Google.Protobuf.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\MySql.Data.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ZstdSharp.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.AssemblyReference.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.GeneratedMSBuildEditorConfig.editorconfig
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfoInputs.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfo.cs
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.CoreCompileInputs.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.MvcApplicationPartsAssemblyInfo.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cs
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.build.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.development.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoFinalTecnicas.Microsoft.AspNetCore.StaticWebAssets.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.pack.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\bundle\ProyectoFinalTecnicas.styles.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoFinalTecnicas.bundle.scp.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\Proyecto.B4F7349F.Up2Date
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\refint\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.pdb
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.genruntimeconfig.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\4\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ref\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.staticwebassets.runtime.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.exe
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.deps.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.runtimeconfig.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.pdb
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.AssemblyReference.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfoInputs.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfo.cs
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.CoreCompileInputs.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cs
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoFinalTecnicas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\bundle\ProyectoFinalTecnicas.styles.css
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoFinalTecnicas.bundle.scp.css
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\Proyecto.B4F7349F.Up2Date
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\refint\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.pdb
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.genruntimeconfig.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ref\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.Development.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.staticwebassets.runtime.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.exe
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.deps.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.runtimeconfig.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.pdb
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\Google.Protobuf.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\MySql.Data.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ZstdSharp.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.AssemblyReference.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.GeneratedMSBuildEditorConfig.editorconfig
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfoInputs.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfo.cs
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.CoreCompileInputs.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.MvcApplicationPartsAssemblyInfo.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cs
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.build.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.development.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoFinalTecnicas.Microsoft.AspNetCore.StaticWebAssets.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoFinalTecnicas.props
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.pack.json
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\bundle\ProyectoFinalTecnicas.styles.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoFinalTecnicas.bundle.scp.css
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\Proyecto.B4F7349F.Up2Date
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\refint\ProyectoFinalTecnicas.dll
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.pdb
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.genruntimeconfig.cache
+E:\UNICAES Rebeca\Ciclo 6\Tecnicas\ProyectoFinal\ProyectoF\5\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ref\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\appsettings.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.staticwebassets.runtime.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.exe
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.deps.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.runtimeconfig.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ProyectoFinalTecnicas.pdb
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.AssemblyReference.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfoInputs.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.AssemblyInfo.cs
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.csproj.CoreCompileInputs.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.RazorAssemblyInfo.cs
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.ProyectoFinalTecnicas.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.build.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ProyectoFinalTecnicas.props
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\bundle\ProyectoFinalTecnicas.styles.css
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\scopedcss\projectbundle\ProyectoFinalTecnicas.bundle.scp.css
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\Proyecto.B4F7349F.Up2Date
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\refint\ProyectoFinalTecnicas.dll
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.pdb
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ProyectoFinalTecnicas.genruntimeconfig.cache
+C:\Users\DamianDev\Desktop\ProyectoFinal (1)\ProyectoFinal\ProyectoFinalTecnicas\ProyectoFinalTecnicas\obj\Debug\net8.0\ref\ProyectoFinalTecnicas.dll

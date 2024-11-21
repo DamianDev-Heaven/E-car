@@ -1,0 +1,84 @@
+﻿@model ProyectoFinalTecnicas.Models.Empleado
+
+<div class="container my-5">
+    <!-- Header flotante -->
+    <div class="bg-primary text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+        <h1>Editar Empleado</h1>
+        <p>Actualiza los datos del empleado seleccionado.</p>
+    </div>
+
+    <!-- Formulario -->
+    <form asp-action="Edit" method="post" class="shadow p-4 rounded bg-white" style="max-width: 600px; margin: auto;">
+        <input type="hidden" name="IdEmpleado" value="@Model.IdEmpleado" />
+
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" value="@Model?.Nombre" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Telefono" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="Telefono" name="Telefono" value="@Model?.Telefono" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Cargo" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="Cargo" name="Cargo" value="@Model?.Cargo" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="Email" name="Email" value="@Model?.Email" required />
+        </div>
+
+        <!-- Campo para Contraseña -->
+        <div class="mb-3">
+            <label for="Contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="Contrasena" name="Contrasena" value="@Model?.Contrasena"
+                   minlength="8" maxlength="50" required />
+            <div class="form-text">Debe tener entre 8 y 50 caracteres.</div>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-success btn-lg">
+                <i class="bi bi-save"></i> Guardar Cambios
+            </button>
+            <a href="@Url.Action("Index", "Empleado")" class="btn btn-outline-secondary btn-lg">
+                <i class="bi bi-arrow-left-circle"></i> Volver
+            </a>
+        </div>
+    </form>
+</div>
+
+
+<!-- Estilos personalizados -->
+<style>
+    body {
+        background-color: #f4f4f9;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    form {
+        border: 1px solid #ddd;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
+    }
+</style>

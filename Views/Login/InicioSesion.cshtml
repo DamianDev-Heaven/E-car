@@ -1,0 +1,74 @@
+﻿@* @{
+    Layout = "_LoginLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body style="display:flex; align-items:center; justify-content:center;">
+    <div class="register-page">
+        <div class="register-form-container">
+            <form asp-action="InicioSesion" class="register-form" method="POST">
+                <h2>Login</h2>
+                <input type="text" name="nom" placeholder="Nombre *" required />
+                <input type="email" name="con" placeholder="Email *" required />
+                <button type="submit" class="btn-register">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Iniciar Sesion
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary btn-lg">
+                        <i class="bi bi-x-circle"></i> Cancelar
+                    </a>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+ *@
+@{
+    Layout = "_LoginLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body style="display:flex; align-items:center; justify-content:center;">
+    <div class="register-page">
+        <div class="register-form-container">
+            <form class="register-form">
+                <h2>Login</h2>
+                <input type="text" name="nom" placeholder="Nombre *" required />
+                <input type="email" name="con" placeholder="Email *" required />
+
+                <!-- Botón de Iniciar Sesión que redirige al Index -->
+                <a href="@Url.Action("Index", "Home")" class="btn-register">
+                    Iniciar Sesión
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
