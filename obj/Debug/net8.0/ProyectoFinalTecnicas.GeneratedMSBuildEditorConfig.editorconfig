@@ -22,10 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxxdWlsZXJcQ3JlYXRlQWxxdWlsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DamianDev/Desktop/ProyectoFinal (1)/ProyectoFinal/ProyectoFinalTecnicas/ProyectoFinalTecnicas/Views/Alquiler/Devolucion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxxdWlsZXJcRGV2b2x1Y2lvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/DamianDev/Desktop/ProyectoFinal (1)/ProyectoFinal/ProyectoFinalTecnicas/ProyectoFinalTecnicas/Views/Alquiler/EditAlquiler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxxdWlsZXJcRWRpdEFscXVpbGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DamianDev/Desktop/ProyectoFinal (1)/ProyectoFinal/ProyectoFinalTecnicas/ProyectoFinalTecnicas/Views/Login/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DamianDev/Desktop/ProyectoFinal (1)/ProyectoFinal/ProyectoFinalTecnicas/ProyectoFinalTecnicas/Views/Rental/Devoluciones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudGFsXERldm9sdWNpb25lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DamianDev/Desktop/ProyectoFinal (1)/ProyectoFinal/ProyectoFinalTecnicas/ProyectoFinalTecnicas/Views/Shared/Error.cshtml]
