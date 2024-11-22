@@ -6,101 +6,117 @@
     <title>@ViewData["Title"] - Dashboard Administrativo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Glassmorphism styles */
-        .glass {
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+    /* Estilo base para garantizar el uso de toda la pantalla */
+    html, body {
+        height: 100%; /* Asegurarse de que ocupen toda la pantalla */
+        margin: 0;
+        overflow: hidden; /* Evitar scroll global innecesario */
+    }
 
-        /* Sidebar styles */
+    /* Contenedor principal que usa flexbox */
+    .d-flex {
+        display: flex;
+        height: 100vh; /* Toda la altura del viewport */
+        overflow: hidden; /* Evitar scroll general */
+    }
+
+    /* Sidebar fijo con estilo de glassmorphism */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh; /* Toda la altura de la pantalla */
+        overflow-y: auto; /* Scroll interno si hay mucho contenido */
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+    }
+
+    .sidebar h2 {
+        color: #6f42c1;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .sidebar .nav-link {
+        color: #6f42c1;
+        font-size: 1rem;
+        padding: 15px 20px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+        background-color: #6f42c1;
+        color: #fff;
+        border-radius: 10px;
+        transform: scale(1.05);
+    }
+
+    /* Main content */
+    .main-content {
+        margin-left: 280px; /* Respeta el ancho del sidebar */
+        padding: 20px;
+        background: #f8f9fa;
+        flex-grow: 1; /* Ocupa el resto del espacio */
+        overflow-y: auto; /* Habilitar scroll si el contenido es extenso */
+    }
+
+    /* Navbar styles */
+    .navbar {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+        color: #6f42c1;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand:hover {
+        color: #5a32a3;
+    }
+
+    /* Estilo de glassmorphism para elementos */
+    .glass {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Responsividad */
+    @@media (max-width: 768px) {
         .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 280px;
-            height: 100vh;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
+            width: 220px;
         }
 
-        .sidebar h2 {
-            color: #6f42c1;
-            font-size: 1.6rem;
-            font-weight: 700;
-            text-align: center;
-            padding: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .sidebar .nav-link {
-            color: #6f42c1;
-            font-size: 1rem;
-            padding: 15px 20px;
-            transition: all 0.3s ease;
-        }
-
-        .sidebar .nav-link:hover,
-        .sidebar .nav-link.active {
-            background-color: #6f42c1;
-            color: #fff;
-            border-radius: 10px;
-            transform: scale(1.05);
-        }
-
-        /* Main content */
         .main-content {
-            margin-left: 280px;
-            padding: 20px;
-            background: #f8f9fa;
-            min-height: 100vh;
-            overflow-x: hidden;
+            margin-left: 220px;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .sidebar {
+            display: none;
         }
 
-        /* Navbar styles */
-        .navbar {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        .main-content {
+            margin-left: 0;
         }
+    }
+</style>
 
-        .navbar-brand {
-            color: #6f42c1;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
 
-        .navbar-brand:hover {
-            color: #5a32a3;
-        }
-
-        /* Responsiveness */
-        @@media (max-width: 768px) {
-            .sidebar {
-                width: 220px;
-            }
-
-            .main-content {
-                margin-left: 220px;
-            }
-        }
-
-        @@media (max-width: 576px) {
-            .sidebar {
-                display: none;
-            }
-
-            .main-content {
-                margin-left: 0;
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="d-flex">
@@ -126,6 +142,7 @@
                 <li class="nav-item">
                     <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Registrar">Login</a>
                 </li>
+
             </ul>
         </div>
 

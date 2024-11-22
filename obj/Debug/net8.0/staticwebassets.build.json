@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fgT7DAlrNeVSavN3L0iYyVHprp7SlpNRSWkf4iU7PeE=",
+  "Hash": "lozm9N9iZ9y7uJsHsioRmkpgNbLCMuuFMUQ3gjO4lDQ=",
   "Source": "ProyectoFinalTecnicas",
   "BasePath": "_content/ProyectoFinalTecnicas",
   "Mode": "Default",
@@ -321,6 +321,25 @@
       "OriginalItemSpec": "wwwroot\\images\\37e94693-b782-4926-b07d-8bdc0e96d6b2_Audi.jpg"
     },
     {
+      "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg",
+      "SourceId": "ProyectoFinalTecnicas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\",
+      "BasePath": "_content/ProyectoFinalTecnicas",
+      "RelativePath": "images/4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg"
+    },
+    {
       "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\5cc927e7-1775-41ed-afcc-9df700ceec87_Audi.jpg",
       "SourceId": "ProyectoFinalTecnicas",
       "SourceType": "Discovered",
@@ -585,6 +604,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\d71c554e-9acf-4a59-90b3-cfdd18875af6_Tesla_Model_X_2021-01@2x.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg",
+      "SourceId": "ProyectoFinalTecnicas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\",
+      "BasePath": "_content/ProyectoFinalTecnicas",
+      "RelativePath": "images/d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg"
     },
     {
       "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\dad251f5-a350-4c50-bb3c-9115d586e392_Audi.jpg",

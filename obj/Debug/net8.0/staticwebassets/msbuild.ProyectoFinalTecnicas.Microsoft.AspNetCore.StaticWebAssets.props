@@ -224,6 +224,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\37e94693-b782-4926-b07d-8bdc0e96d6b2_Audi.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProyectoFinalTecnicas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProyectoFinalTecnicas</BasePath>
+      <RelativePath>images/4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\4cda5eff-7740-4d58-9f68-bbbc3dad1e66_1046_roma_white_4s_u-crane_AKOS7226_edit_V02.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\5cc927e7-1775-41ed-afcc-9df700ceec87_Audi.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>ProyectoFinalTecnicas</SourceId>
@@ -447,6 +463,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\d71c554e-9acf-4a59-90b3-cfdd18875af6_Tesla_Model_X_2021-01@2x.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProyectoFinalTecnicas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProyectoFinalTecnicas</BasePath>
+      <RelativePath>images/d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\d9862c06-d54c-4b8f-809a-b3ea7cbec8e8_prueba-nissan-gt-r-black-edition.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\dad251f5-a350-4c50-bb3c-9115d586e392_Audi.jpg))">
       <SourceType>Package</SourceType>

@@ -56,28 +56,68 @@ namespace ProyectoFinalTecnicas.Controllers
         }
 
         [HttpPost]
-        public IActionResult GenerarFactura(Factura factura)
+        [HttpPost]
+        public IActionResult GenerarFactura(Factura factura, int dias)
         {
-
             if (ModelState.IsValid)
             {
                 using (var connection = _dataContext.GetConnection())
                 {
                     connection.Open();
 
-                    // Query para insertar la factura en la base de datos
-                    string query = @"INSERT INTO facturas (id_cliente, id_auto, id_empleado, fecha, subtotal, iva, total)
-                                     VALUES (@id_cliente, @id_auto, @id_empleado, @fecha, @subtotal, @iva, @total)";
-                    var command = new MySqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@id_cliente", factura.id_cliente);
-                    command.Parameters.AddWithValue("@id_auto", factura.id_auto);
-                    command.Parameters.AddWithValue("@id_empleado", factura.id_empleado);
-                    command.Parameters.AddWithValue("@fecha", factura.Fecha);
-                    command.Parameters.AddWithValue("@subtotal", factura.Subtotal);
-                    command.Parameters.AddWithValue("@iva", factura.Iva);
-                    command.Parameters.AddWithValue("@total", factura.Total);
+                    // Calcular la fecha de devolución
+                    DateTime fechaDevolucion = factura.Fecha.AddDays(dias);
 
-                    command.ExecuteNonQuery();
+                    // Iniciar una transacción
+                    using (var transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar la factura
+                            string queryFactura = @"INSERT INTO facturas (id_cliente, id_auto, id_empleado, fecha, subtotal, iva, total)
+                                    VALUES (@id_cliente, @id_auto, @id_empleado, @fecha, @subtotal, @iva, @total)";
+                            var commandFactura = new MySqlCommand(queryFactura, connection, transaction);
+                            commandFactura.Parameters.AddWithValue("@id_cliente", factura.id_cliente);
+                            commandFactura.Parameters.AddWithValue("@id_auto", factura.id_auto);
+                            commandFactura.Parameters.AddWithValue("@id_empleado", factura.id_empleado);
+                            commandFactura.Parameters.AddWithValue("@fecha", factura.Fecha);
+                            commandFactura.Parameters.AddWithValue("@subtotal", factura.Subtotal);
+                            commandFactura.Parameters.AddWithValue("@iva", factura.Iva);
+                            commandFactura.Parameters.AddWithValue("@total", factura.Total);
+                            commandFactura.ExecuteNonQuery();
+
+                            // Obtener el id_factura generado
+                            int idFactura = (int)commandFactura.LastInsertedId;
+
+                            // Insertar en la tabla "alquilados"
+                            string queryAlquilados = @"INSERT INTO alquilados (id_auto, id_cliente, id_empleado, id_factura, fecha, fecha_devolver, devuelto)
+                                       VALUES (@id_auto, @id_cliente, @id_empleado, @id_factura, @fecha_renta, @fecha_devolucion, 0)";
+                            var commandAlquilados = new MySqlCommand(queryAlquilados, connection, transaction);
+                            commandAlquilados.Parameters.AddWithValue("@id_auto", factura.id_auto);
+                            commandAlquilados.Parameters.AddWithValue("@id_cliente", factura.id_cliente);
+                            commandAlquilados.Parameters.AddWithValue("@id_empleado", factura.id_empleado);
+                            commandAlquilados.Parameters.AddWithValue("@id_factura", idFactura); // Enviar el ID de la factura
+                            commandAlquilados.Parameters.AddWithValue("@fecha_renta", factura.Fecha);
+                            commandAlquilados.Parameters.AddWithValue("@fecha_devolucion", fechaDevolucion);
+                            commandAlquilados.Parameters.AddWithValue("@devuelto", 0); // El auto no ha sido devuelto
+                            commandAlquilados.ExecuteNonQuery();
+
+                            // Actualizar el estado del auto
+                            string queryActualizarAuto = @"UPDATE autos SET estado = 0 WHERE id_auto = @id_auto";
+                            var commandActualizarAuto = new MySqlCommand(queryActualizarAuto, connection, transaction);
+                            commandActualizarAuto.Parameters.AddWithValue("@id_auto", factura.id_auto);
+                            commandActualizarAuto.ExecuteNonQuery();
+
+                            // Confirmar transacción
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            // Manejo de errores (log o excepciones)
+                            throw new Exception("Error al generar la factura y actualizar datos", ex);
+                        }
+                    }
                 }
 
                 return RedirectToAction("Index", "Home"); // Redirige a una página de confirmación o al índice
@@ -85,7 +125,6 @@ namespace ProyectoFinalTecnicas.Controllers
 
             return View(factura); // Si hay errores de validación, vuelve al formulario
         }
-    
 
 
         // Método para autocompletar cliente

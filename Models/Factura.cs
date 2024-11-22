@@ -1,4 +1,6 @@
-﻿namespace ProyectoFinalTecnicas.Models
+﻿using System.Data;
+
+namespace ProyectoFinalTecnicas.Models
 {
     public class Factura
     {

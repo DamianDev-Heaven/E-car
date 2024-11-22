@@ -1,0 +1,81 @@
+﻿@model ProyectoFinalTecnicas.Models.Auto
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolver Auto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Buscar Cliente -->
+        <h3>Devolver Auto</h3>
+        <form method="post" action="@Url.Action("DevolverAuto", "Devolucion")">
+            <div class="mb-3">
+                <label for="cliente" class="form-label">Cliente</label>
+                <input type="text" class="form-control" id="cliente" name="cliente" required>
+                <input type="hidden" name="id_cliente" id="id_cliente" />
+            </div>
+
+            <!-- Detalles del Auto Alquilado -->
+            <div class="mb-3">
+                <label for="auto" class="form-label">Auto Alquilado</label>
+                <input type="text" class="form-control" id="auto" name="auto" readonly>
+                <input type="hidden" name="id_auto" id="id_auto" />
+            </div>
+
+            <!-- Fecha de Devolución -->
+            <div class="mb-3">
+                <label for="fechaDevolucion" class="form-label">Fecha de Devolución</label>
+                <input type="date" class="form-control" id="fechaDevolucion" name="fechaDevolucion" value="@DateTime.Now.ToString("yyyy-MM-dd")" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Devolver Auto</button>
+        </form>
+    </div>
+
+    <script>
+        // Autocompletar Cliente
+        $("#cliente").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '@Url.Action("AutocompletarCliente", "Devolucion")',
+                    data: { term: request.term },
+                    success: function (data) {
+                        response(data.map(function (item) {
+                            return { label: item.label, value: item.label, id: item.id };
+                        }));
+                    }
+                });
+            },
+            select: function (event, ui) {
+                $('#id_cliente').val(ui.item.id);  // Establecer ID del cliente
+                obtenerAutoAlquilado(ui.item.id);  // Obtener el auto alquilado del cliente
+            }
+        });
+
+        // Obtener el auto alquilado por cliente
+        function obtenerAutoAlquilado(idCliente) {
+            $.ajax({
+                url: '@Url.Action("ObtenerAutoAlquilado", "Devolucion")',
+                data: { id_cliente: idCliente },
+                success: function (data) {
+                    if (data) {
+                        $("#auto").val(data.marca + " - " + data.modelo);
+                        $("#id_auto").val(data.id_auto);
+                    } else {
+                        alert("Este cliente no tiene autos alquilados.");
+                    }
+                }
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

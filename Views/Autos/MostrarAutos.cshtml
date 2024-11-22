@@ -8,20 +8,67 @@
     <title>@ViewData["Title"] - Listado de Autos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Fondo general */
         body {
-            background: linear-gradient(to bottom right, rgba(239, 244, 255, 0.9), rgba(196, 196, 255, 0.7));
-            min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Cambiar de "center" a permitir más flexibilidad */
+            justify-content: flex-start;
+            align-items: stretch;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
+
         .listado-autos {
-            max-width: 1200px; /* Ancho máximo para el contenedor */
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
             width: 100%;
-            padding: 20px;
         }
+
+
+
+        .categorias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .categoria-pill {
+            background-color: #e3f2fd;
+            border: 1px solid #90caf9;
+            color: #1565c0;
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .categoria-pill:hover {
+                background-color: #bbdefb;
+                color: #0d47a1;
+            }
+
+        .buscador {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .buscador input {
+                width: 50%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 25px;
+                outline: none;
+                transition: box-shadow 0.3s ease;
+            }
+
+                .buscador input:focus {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
 
         .card {
             border: none;
@@ -31,27 +78,21 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
-            height: 100%; /* Asegura que las tarjetas no se expandan */
-            position: relative; /* Para posicionar el menú de opciones */
-            overflow: hidden; /* Asegura que el menú no sobresalga */
-
+            height: 100%;
+            position: relative;
+            overflow: hidden;
         }
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            }
 
         .card-img-top {
-            width: 100%; /* Asegura que la imagen tenga el ancho completo */
-            height: 200px; /* Ajusta la altura para hacerla más pequeña */
-            object-fit: cover; /* Mantiene el aspecto correcto de la imagen */
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 15px 15px 0 0;
-        }
-
-        .card a {
-            text-decoration: none; /* Quita el subrayado */
-            color: inherit; /* Mantiene el color del texto */
         }
 
         .card-body {
@@ -59,7 +100,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 100%;
         }
 
         .card-title {
@@ -69,114 +109,112 @@
         }
 
         .card-text {
-            color: #6c757d;
-            font-size: 0.9rem; /* Reduce el tamaño de texto */
+            font-size: 0.9rem;
             margin-bottom: 10px;
         }
 
-        .card-footer {
-            background-color: transparent;
-            border-top: none;
-            text-align: right;
+        .estado-alquilable {
+            color: green;
+            font-weight: bold;
         }
 
-        /* Estilos para el menú de opciones */
-        .opciones-card {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 9999; /* Asegura que el menú se muestre encima de otros elementos */
+        .estado-no-alquilable {
+            color: red;
+            font-weight: bold;
         }
 
-        .opciones-btn {
-            background: rgba(255,255,255,0.8);
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            color: #6c757d;
-            transition: background-color 0.3s ease;
-        }
+        .disabled-card {
+            opacity: 0.6; /* Aplica transparencia */
+            cursor: not-allowed; /* Muestra un cursor de deshabilitado */
+}
 
-        .opciones-btn:hover {
-            background: rgba(255,255,255,1);
-        }
-
-        .dropdown-menu {
-            min-width: 120px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .dropdown-item {
-            display: flex;
-            align-items: center;
-        }
-
-        .dropdown-item i {
-            margin-right: 8px;
-        }
-
-        /* Responsiveness */
-        @@media (max-width: 768px) {
-            .card-img-top {
-                height: 180px;
-            }
-        }
-
-        @@media (max-width: 480px) {
-            .card-img-top {
-                height: 150px;
-            }
-        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
     <div class="listado-autos">
+        <div class="buscador">
+            <input type="text" id="searchInput" oninput="filtrarAutos()" placeholder="Buscar autos por marca, modelo o placa...">
+        </div>
+
+        <div class="categorias">
+    <div class="categoria-pill" onclick="mostrarTodos()">Todos</div>
+    @foreach (var tipo in Model.Select(a => a.Tipo).Distinct())
+    {
+        <div class="categoria-pill" onclick="filtrarPorTipo('@tipo')">@tipo</div>
+    }
+</div>
+
+
         <h2 class="text-center mb-4">Listado de Autos</h2>
-        <div class="row">
-            @foreach (var auto in Model)
+        <div class="row g-3" id="autoList"> <!-- Se agregó g-3 para gestionar el espacio entre las columnas -->
+    @foreach (var auto in Model)
+    {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 auto-item" data-tipo="@auto.Tipo">
+            @if (auto.Estado == 1)
             {
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card glass">
-                        <div class="opciones-card dropdown">
-                            <button class="btn opciones-btn" type="button" id="dropdownMenuButton_@auto.Placa" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-three-dots-vertical"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton_@auto.Placa">
-                                <li>
-                                    <a class="dropdown-item" href="@Url.Action("Edit", new { placa = auto.Placa })">
-                                        <i class="bi bi-pencil"></i> Editar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-danger" href="#" data-bs-toggle="modal" data-bs-target="#eliminarModal_@auto.Placa">
-                                        <i class="bi bi-trash"></i> Eliminar
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="@Url.Action("Detalles", "Factura", new { placa = auto.Placa })">
-                            <img src="@auto.Imagen" alt="Imagen del Auto" class="card-img-top" onerror="this.onerror=null; this.src='/images/default-car.jpg'">
-                            <div class="card-body">
-                                <h5 class="card-title">@auto.Marca - @auto.Modelo</h5>
-                                <p class="card-text"><strong>Placa:</strong> @auto.Placa</p>
-                                <p class="card-text"><strong>Tipo:</strong> @auto.Tipo</p>
-                                <p class="card-text"><strong>Estado:</strong> @auto.Estado</p>
-                                <p class="card-text"><strong>Precio por Día:</strong> @auto.Price</p>
-                            </div>
-                        </a>
-
-
+                <!-- Tarjeta habilitada -->
+                <a href="@Url.Action("Detalles", "Factura", new { placa = auto.Placa })" class="card text-decoration-none">
+                    <img src="@auto.Imagen" alt="Imagen del Auto" class="card-img-top" onerror="this.onerror=null; this.src='/images/default-car.jpg'">
+                    <div class="card-body">
+                        <h5 class="card-title">@auto.Marca - @auto.Modelo</h5>
+                        <p class="card-text"><strong>Placa:</strong> @auto.Placa</p>
+                        <p class="card-text"><strong>Tipo:</strong> @auto.Tipo</p>
+                        <p class="card-text">
+                            <strong>Estado:</strong>
+                            <span class="estado-alquilable">Alquilable</span>
+                        </p>
+                        <p class="card-text"><strong>Precio por Día:</strong> $@auto.Price</p>
+                    </div>
+                </a>
+            }
+            else
+            {
+                <!-- Tarjeta deshabilitada -->
+                <div class="card disabled-card">
+                    <img src="@auto.Imagen" alt="Imagen del Auto" class="card-img-top" onerror="this.onerror=null; this.src='/images/default-car.jpg'">
+                    <div class="card-body">
+                        <h5 class="card-title">@auto.Marca - @auto.Modelo</h5>
+                        <p class="card-text"><strong>Placa:</strong> @auto.Placa</p>
+                        <p class="card-text"><strong>Tipo:</strong> @auto.Tipo</p>
+                        <p class="card-text">
+                            <strong>Estado:</strong>
+                            <span class="estado-no-alquilable">No alquilable</span>
+                        </p>
+                        <p class="card-text"><strong>Precio por Día:</strong> $@auto.Price</p>
                     </div>
                 </div>
             }
         </div>
+    }
+</div>
+
     </div>
+    <script>
+        function filtrarAutos() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const autos = document.querySelectorAll('.auto-item');
+            autos.forEach(auto => {
+                const text = auto.innerText.toLowerCase();
+                auto.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+
+        function filtrarPorTipo(tipo) {
+            const autos = document.querySelectorAll('.auto-item');
+            autos.forEach(auto => {
+                const autoTipo = auto.getAttribute('data-tipo');
+                auto.style.display = autoTipo === tipo ? '' : 'none';
+            });
+        }
+        function mostrarTodos() {
+            const autos = document.querySelectorAll('.auto-item');
+            autos.forEach(auto => {
+            auto.style.display = '';
+            });
+        }
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
