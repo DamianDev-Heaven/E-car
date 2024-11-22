@@ -13,7 +13,6 @@
         public string Observaciones { get; set; }
         public bool Devuelto { get; set; }
 
-        // Agregamos estos campos para los datos relacionados
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string ClienteNombre { get; set; }

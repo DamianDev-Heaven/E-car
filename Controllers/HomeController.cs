@@ -39,15 +39,13 @@ namespace ProyectoFinalTecnicas.Controllers
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
-            // Asignar marcas al ViewBag
             ViewBag.Marcas = marcas;
 
-            return View(new List<Auto>()); // Pasamos un modelo vacío inicialmente
+            return View(new List<Auto>());
         }
 
 
 
-        [HttpPost]
         [HttpPost]
         public IActionResult BuscarAutos(int? estado, string marca, double? precio)
         {
@@ -60,7 +58,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 {
                     connection.Open();
 
-                    // Cargar marcas
                     string marcasQuery = "SELECT DISTINCT marca FROM autos";
                     using (var marcasCommand = new MySqlCommand(marcasQuery, connection))
                     {
@@ -73,8 +70,7 @@ namespace ProyectoFinalTecnicas.Controllers
                         }
                     }
 
-                    // Construcción dinámica de la consulta SQL
-                    string query = "SELECT * FROM autos WHERE 1=1"; // Base para añadir filtros
+                    string query = "SELECT * FROM autos WHERE 1=1";
                     var parameters = new List<MySqlParameter>();
 
                     if (estado.HasValue)
@@ -123,7 +119,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
-            // Pasar marcas y autos al ViewBag
             ViewBag.Marcas = marcas;
 
             return View("Index", res_busqueda);

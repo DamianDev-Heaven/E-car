@@ -88,7 +88,7 @@
                 });
             },
             select: function (event, ui) {
-                $('#id_empleado').val(ui.item.id);  // Establecer ID del empleado
+                $('#id_empleado').val(ui.item.id);
             }
         });
 
@@ -105,11 +105,10 @@
                 });
             },
             select: function (event, ui) {
-                $('#id_cliente').val(ui.item.id);  // Establecer ID del cliente
+                $('#id_cliente').val(ui.item.id);
             }
         });
 
-        // Calcular los valores de la factura en tiempo real
         $("#dias").on('input', function () {
             var precioDia = parseFloat($("input[name='precio_dia']").val());
             var dias = parseInt($("#dias").val());

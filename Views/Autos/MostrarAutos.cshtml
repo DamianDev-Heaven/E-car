@@ -10,7 +10,7 @@
     <style>
         body {
             display: flex;
-            flex-direction: column; /* Cambiar de "center" a permitir más flexibilidad */
+            flex-direction: column;
             justify-content: flex-start;
             align-items: stretch;
             min-height: 100vh;
@@ -124,8 +124,8 @@
         }
 
         .disabled-card {
-            opacity: 0.6; /* Aplica transparencia */
-            cursor: not-allowed; /* Muestra un cursor de deshabilitado */
+            opacity: 0.6;
+            cursor: not-allowed;
 }
 
     </style>
@@ -147,13 +147,12 @@
 
 
         <h2 class="text-center mb-4">Listado de Autos</h2>
-        <div class="row g-3" id="autoList"> <!-- Se agregó g-3 para gestionar el espacio entre las columnas -->
+        <div class="row g-3" id="autoList">
     @foreach (var auto in Model)
     {
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 auto-item" data-tipo="@auto.Tipo">
             @if (auto.Estado == 1)
             {
-                <!-- Tarjeta habilitada -->
                 <a href="@Url.Action("Detalles", "Factura", new { placa = auto.Placa })" class="card text-decoration-none">
                     <img src="@auto.Imagen" alt="Imagen del Auto" class="card-img-top" onerror="this.onerror=null; this.src='/images/default-car.jpg'">
                     <div class="card-body">

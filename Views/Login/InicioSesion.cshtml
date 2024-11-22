@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <style>
-        /* Estilo general */
         body {
             margin: 0;
             padding: 0;
@@ -22,8 +21,6 @@
             min-height: 100vh;
             height: 100%;
         }
-
-        /* Contenedor principal */
         .login-page {
             display: flex;
             justify-content: center;
@@ -31,7 +28,7 @@
             padding: 20px;
             width: 100%;
             max-width: 400px;
-            margin: auto;  /* Asegura que el contenedor esté centrado en cualquier dispositivo */
+            margin: auto;
         }
 
         .login-form-container {
@@ -66,7 +63,6 @@
             font-size: 0.9rem;
         }
 
-        /* Botón */
         .btn-login {
             display: inline-block;
             padding: 10px 20px;
@@ -92,17 +88,14 @@
             <form class="login-form" asp-action="ValidarLogin" asp-controller="Login" method="post">
                 <h2>Inicio de Sesión</h2>
 
-                <!-- Mensaje de error -->
                 @if (TempData["Error"] != null)
                 {
                         <p class="error-message">@TempData["Error"]</p>
                 }
 
-                <!-- Campos del formulario -->
                 <input type="email" name="email" placeholder="Correo electrónico *" required />
                 <input type="password" name="contrasena" placeholder="Contraseña *" required />
 
-                <!-- Botón de inicio de sesión -->
                 <button type="submit" class="btn-login">Iniciar Sesión</button>
             </form>
         </div>

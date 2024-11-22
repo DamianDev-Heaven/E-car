@@ -15,7 +15,6 @@ namespace ProyectoFinalTecnicas.Controllers
             _dataContext = dataContext;
         }
 
-        // Método para obtener detalles del auto por placa (sin cambios)
         public IActionResult Detalles(string placa)
         {
             Auto auto = null;
@@ -65,15 +64,12 @@ namespace ProyectoFinalTecnicas.Controllers
                 {
                     connection.Open();
 
-                    // Calcular la fecha de devolución
                     DateTime fechaDevolucion = factura.Fecha.AddDays(dias);
 
-                    // Iniciar una transacción
                     using (var transaction = connection.BeginTransaction())
                     {
                         try
                         {
-                            // Insertar la factura
                             string queryFactura = @"INSERT INTO facturas (id_cliente, id_auto, id_empleado, fecha, subtotal, iva, total)
                                     VALUES (@id_cliente, @id_auto, @id_empleado, @fecha, @subtotal, @iva, @total)";
                             var commandFactura = new MySqlCommand(queryFactura, connection, transaction);
@@ -86,48 +82,41 @@ namespace ProyectoFinalTecnicas.Controllers
                             commandFactura.Parameters.AddWithValue("@total", factura.Total);
                             commandFactura.ExecuteNonQuery();
 
-                            // Obtener el id_factura generado
                             int idFactura = (int)commandFactura.LastInsertedId;
 
-                            // Insertar en la tabla "alquilados"
                             string queryAlquilados = @"INSERT INTO alquilados (id_auto, id_cliente, id_empleado, id_factura, fecha, fecha_devolver, devuelto)
                                        VALUES (@id_auto, @id_cliente, @id_empleado, @id_factura, @fecha_renta, @fecha_devolucion, 0)";
                             var commandAlquilados = new MySqlCommand(queryAlquilados, connection, transaction);
                             commandAlquilados.Parameters.AddWithValue("@id_auto", factura.id_auto);
                             commandAlquilados.Parameters.AddWithValue("@id_cliente", factura.id_cliente);
                             commandAlquilados.Parameters.AddWithValue("@id_empleado", factura.id_empleado);
-                            commandAlquilados.Parameters.AddWithValue("@id_factura", idFactura); // Enviar el ID de la factura
+                            commandAlquilados.Parameters.AddWithValue("@id_factura", idFactura);
                             commandAlquilados.Parameters.AddWithValue("@fecha_renta", factura.Fecha);
                             commandAlquilados.Parameters.AddWithValue("@fecha_devolucion", fechaDevolucion);
-                            commandAlquilados.Parameters.AddWithValue("@devuelto", 0); // El auto no ha sido devuelto
+                            commandAlquilados.Parameters.AddWithValue("@devuelto", 0);
                             commandAlquilados.ExecuteNonQuery();
 
-                            // Actualizar el estado del auto
                             string queryActualizarAuto = @"UPDATE autos SET estado = 0 WHERE id_auto = @id_auto";
                             var commandActualizarAuto = new MySqlCommand(queryActualizarAuto, connection, transaction);
                             commandActualizarAuto.Parameters.AddWithValue("@id_auto", factura.id_auto);
                             commandActualizarAuto.ExecuteNonQuery();
 
-                            // Confirmar transacción
                             transaction.Commit();
                         }
                         catch (Exception ex)
                         {
                             transaction.Rollback();
-                            // Manejo de errores (log o excepciones)
                             throw new Exception("Error al generar la factura y actualizar datos", ex);
                         }
                     }
                 }
 
-                return RedirectToAction("Index", "Home"); // Redirige a una página de confirmación o al índice
+                return RedirectToAction("Index", "Home");
             }
 
-            return View(factura); // Si hay errores de validación, vuelve al formulario
+            return View(factura);
         }
 
-
-        // Método para autocompletar cliente
         public IActionResult AutocompletarCliente(string term)
         {
             List<object> clientes = new List<object>();
@@ -156,7 +145,6 @@ namespace ProyectoFinalTecnicas.Controllers
             return Json(clientes);
         }
 
-        // Método para autocompletar empleado
         public IActionResult AutocompletarEmpleado(string term)
         {
             List<object> empleados = new List<object>();

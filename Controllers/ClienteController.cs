@@ -42,7 +42,7 @@ namespace ProyectoFinalTecnicas.Controllers
                             DUI = reader.GetString("dui"),
                             Email = reader.GetString("email"),
 
-                            Contrasena = reader["contrasena"] == DBNull.Value ? null : reader.GetString("contrasena") // Manejo de nulos
+                            Contrasena = reader["contrasena"] == DBNull.Value ? null : reader.GetString("contrasena")
                         });
                     }
                     Console.WriteLine("Datos cargados correctamente.");
@@ -66,7 +66,7 @@ namespace ProyectoFinalTecnicas.Controllers
                 try
                 {
                     connection.Open();
-                    string query = "DELETE FROM clientes WHERE id_cliente = @id_cliente"; // Asegúrate de que el nombre coincida
+                    string query = "DELETE FROM clientes WHERE id_cliente = @id_cliente";
                     var command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@id_cliente", id);
 
@@ -120,7 +120,7 @@ namespace ProyectoFinalTecnicas.Controllers
                             Contrasena = reader["contrasena"].ToString()
                         };
 
-                        return View(cliente); // Devuelve el modelo cliente a la vista Edit
+                        return View(cliente);
                     }
                     else
                     {
@@ -189,7 +189,6 @@ namespace ProyectoFinalTecnicas.Controllers
                     connection.Open();
                     Console.WriteLine("Conexión abierta exitosamente.");
 
-                    // Construir la consulta SQL con parámetros para evitar inyección de SQL
                     string query = @"
                             SELECT * FROM clientes 
                             WHERE nombre LIKE @Criterio 
@@ -224,7 +223,7 @@ namespace ProyectoFinalTecnicas.Controllers
                 }
             }
 
-            return View("MostrarClientes", clientes); // Usa la misma vista para mostrar resultados
+            return View("MostrarClientes", clientes);
         }
 
 
@@ -238,14 +237,12 @@ namespace ProyectoFinalTecnicas.Controllers
                     connection.Open();
                     Console.WriteLine("Conexión abierta exitosamente.");
 
-                    // Consulta SQL para insertar un nuevo cliente
                     string query = @"
                 INSERT INTO clientes (nombre, direccion, telefono, dui, email, contrasena) 
                 VALUES (@Nombre, @Direccion, @Telefono, @DUI, @Email, @Contrasena)";
 
                     var command = new MySqlCommand(query, connection);
 
-                    // Asignar valores a los parámetros de la consulta
                     command.Parameters.AddWithValue("@Nombre", nuevoCliente.Nombre);
                     command.Parameters.AddWithValue("@Direccion", nuevoCliente.Direccion);
                     command.Parameters.AddWithValue("@Telefono", nuevoCliente.Telefono);
@@ -253,7 +250,6 @@ namespace ProyectoFinalTecnicas.Controllers
                     command.Parameters.AddWithValue("@Email", nuevoCliente.Email);
                     command.Parameters.AddWithValue("@Contrasena", nuevoCliente.Contrasena);
 
-                    // Ejecutar la consulta
                     int filasAfectadas = command.ExecuteNonQuery();
 
                     Console.WriteLine($"Cliente agregado correctamente. Filas afectadas: {filasAfectadas}");
@@ -266,7 +262,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 }
             }
 
-            // Redirigir a la vista de MostrarClientes (o cualquier otra vista)
             return RedirectToAction("MostrarClientes");
         }
 

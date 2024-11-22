@@ -61,7 +61,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 try
                 {
                     connection.Open();
-                    // Query para eliminar el alquiler con el id proporcionado
                     string query = "DELETE FROM alquilados WHERE id_alquiler = @id";
                     var command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@id", id);
@@ -83,7 +82,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 }
             }
 
-            // Redirige a la vista de todos los alquileres después de la eliminación
             return RedirectToAction("MostrarAlquiler");
         }
 
@@ -185,7 +183,7 @@ namespace ProyectoFinalTecnicas.Controllers
         [HttpPost]
         public IActionResult CreateAlquiler(Alquiler alquiler)
         {
-            if (ModelState.IsValid) // Verifica que el modelo es válido
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -224,7 +222,7 @@ namespace ProyectoFinalTecnicas.Controllers
                 }
             }
 
-            return View(alquiler); // Si hay algún error o el modelo no es válido, vuelve a mostrar el formulario
+            return View(alquiler);
         }
 
         public IActionResult DevolverAuto(int id)
@@ -234,7 +232,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 try
                 {
                     connection.Open();
-                    // Actualizar el alquiler como devuelto y asignar la fecha de devolución real
                     string query = "UPDATE alquilados SET devuelto = @devuelto, fecha_devolucion_real = @fecha_devolucion_real WHERE id_alquiler = @id_alquiler";
                     var command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@id_alquiler", id);

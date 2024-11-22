@@ -36,7 +36,7 @@ namespace ProyectoFinalTecnicas.Controllers
                             Telefono = reader.GetString("telefono"),
                             Cargo = reader.GetString("cargo"),
                             Email = reader.GetString("email"),
-                            Contrasena = reader.GetString("contrasena") // Agregar contraseña
+                            Contrasena = reader.GetString("contrasena")
                         });
                     }
                 }
@@ -105,7 +105,7 @@ namespace ProyectoFinalTecnicas.Controllers
                             Telefono = reader.GetString("telefono"),
                             Cargo = reader.GetString("cargo"),
                             Email = reader.GetString("email"),
-                            Contrasena = reader.GetString("contrasena") // Agregar contraseña
+                            Contrasena = reader.GetString("contrasena")
                         };
                     }
                 }
@@ -186,7 +186,7 @@ namespace ProyectoFinalTecnicas.Controllers
                         command.Parameters.AddWithValue("@telefono", empleado.Telefono);
                         command.Parameters.AddWithValue("@cargo", empleado.Cargo);
                         command.Parameters.AddWithValue("@email", empleado.Email);
-                        command.Parameters.AddWithValue("@contrasena", empleado.Contrasena); // Asegúrate de incluir la contraseña.
+                        command.Parameters.AddWithValue("@contrasena", empleado.Contrasena);
 
                         int result = command.ExecuteNonQuery();
 

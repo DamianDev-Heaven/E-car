@@ -24,7 +24,6 @@ namespace ProyectoFinalTecnicas.Controllers
             {
                 connection.Open();
 
-                // Query to get rental data
                 string query = @"
                     SELECT a.id_alquiler, a.id_auto, a.id_cliente, a.id_empleado, a.id_factura, 
                            a.fecha, a.fecha_devolver, a.devuelto, a.fecha_devolucion_real, a.observaciones, 
@@ -33,7 +32,7 @@ namespace ProyectoFinalTecnicas.Controllers
                     JOIN autos au ON a.id_auto = au.id_auto
                     JOIN clientes cl ON a.id_cliente = cl.id_cliente
                     JOIN empleados emp ON a.id_empleado = emp.id_empleado
-                    WHERE a.devuelto = 0";  // Only non-returned rentals
+                    WHERE a.devuelto = 0";
 
                 var command = new MySqlCommand(query, connection);
                 using (var reader = command.ExecuteReader())
@@ -70,7 +69,6 @@ namespace ProyectoFinalTecnicas.Controllers
             {
                 connection.Open();
 
-                // Actualizamos la tabla de alquilados
                 string queryAlquiler = @"
             UPDATE alquilados
             SET fecha_devolucion_real = @fechaDevolucionReal, 
@@ -81,9 +79,7 @@ namespace ProyectoFinalTecnicas.Controllers
                 commandAlquiler.Parameters.AddWithValue("@idAlquiler", idAlquiler);
                 commandAlquiler.Parameters.AddWithValue("@fechaDevolucionReal", fechaDevolucionReal);
                 commandAlquiler.Parameters.AddWithValue("@observaciones", observaciones);
-                // Ejecutar la actualización del alquiler
                 commandAlquiler.ExecuteNonQuery();
-                // Actualizamos el estado del auto a 1 (libre)
                 string queryAuto = @"
             UPDATE autos
             SET estado = 1
@@ -91,7 +87,6 @@ namespace ProyectoFinalTecnicas.Controllers
                 var commandAuto = new MySqlCommand(queryAuto, connection);
                 commandAuto.Parameters.AddWithValue("@idAuto", idAuto);
 
-                // Ejecutar la actualización del auto
                 commandAuto.ExecuteNonQuery();
             }
 
@@ -100,7 +95,6 @@ namespace ProyectoFinalTecnicas.Controllers
 
 
 
-// Acción para procesar la devolución
 public IActionResult AutocompletarCliente(string term)
         {
             List<object> clientes = new List<object>();
