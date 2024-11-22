@@ -73,3 +73,78 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(white, #b200ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    /* Contenedor principal */
+    .register-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .register-form-container {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    }
+
+        .register-form-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+        }
+
+        .register-form-container h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .register-form-container .error-message {
+            color: red;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+    /* Botón */
+    .btn-register {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fabeef;
+        background: transparent;
+        border: 1px solid #fabeef;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+        .btn-register:hover {
+            background: #fabeef;
+            color: #fff;
+            box-shadow: 0 0 5px #fabeef, 0 0 25px #fabeef, 0 0 50px #fabeef;
+        }
+</style>

@@ -4,7 +4,7 @@
 
 <div class="container my-5">
     <!-- Header flotante -->
-    <div class="bg-primary text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+    <div class="custom-bg-purple text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
         <h1>@ViewData["Title"]</h1>
         <p>Todos los empleados contratados con sus respectivos datos</p>
     </div>
@@ -46,7 +46,7 @@
                         <td>@empleado.Email</td>
                         <td>
                             <a href="@Url.Action("Edit", new { id = empleado.IdEmpleado })"
-                               class="btn btn-outline-primary btn-sm me-2">
+                               class="btn btn-outline-purple btn-sm me-2">
                                 <i class="bi bi-pencil"></i> Editar
                             </a>
                             <form asp-action="Delete" method="post" style="display:inline;">
@@ -64,7 +64,7 @@
 
     <!-- Botón agregar -->
     <div class="text-end">
-        <a href="@Url.Action("Create", "Empleado")" class="btn btn-primary btn-lg">
+        <a href="@Url.Action("Create", "Empleado")" class="btn btn-purple btn-lg">
             <i class="bi bi-person-plus-fill"></i> Nuevo Empleado
         </a>
     </div>
@@ -87,13 +87,13 @@
         background-color: #e8f4ff;
     }
 
-    .btn-outline-primary {
-        border-color: #007bff;
-        color: #007bff;
+    .btn-outline-purple {
+        border-color: #6f42c1;
+        color: #6f42c1;
     }
 
-        .btn-outline-primary:hover {
-            background-color: #007bff;
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
             color: white;
         }
 
@@ -107,19 +107,24 @@
             color: white;
         }
 
-    .btn-primary {
-        background-color: #0056b3;
+    .btn-purple {
+        background-color: #6f42c1;
         border: none;
     }
 
-        .btn-primary:hover {
-            background-color: #004085;
+        .btn-purple:hover {
+            background-color: #5c2e9a;
         }
 
     .alert {
         max-width: 75%;
         margin: auto;
         font-weight: bold;
+    }
+
+    /* Nueva clase personalizada para el fondo morado del header */
+    .custom-bg-purple {
+        background-color: #6f42c1; /* Morado */
     }
 </style>
 

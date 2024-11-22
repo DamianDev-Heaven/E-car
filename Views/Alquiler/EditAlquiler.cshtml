@@ -1,5 +1,114 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ProyectoFinalTecnicas.Models.Alquiler
+
 @{
+    ViewData["Title"] = "Editar Alquiler";
 }
+
+<div class="container my-5">
+    <!-- Encabezado -->
+    <div class="bg-purple text-white text-center p-4 rounded shadow-lg" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+        <h1>@ViewData["Title"]</h1>
+        <p>Formulario para editar los datos del alquiler seleccionado</p>
+    </div>
+
+    <!-- Formulario de edición de alquiler -->
+    <form asp-action="EditAlquiler" method="post" class="bg-light p-4 rounded shadow-sm">
+        <input type="hidden" name="IdAlquiler" value="@Model.IdAlquiler" />
+
+        <div class="row mb-3">
+            <label for="IdAuto" class="col-sm-2 col-form-label">ID Auto</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="IdAuto" name="IdAuto" value="@Model.IdAuto" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="IdCliente" class="col-sm-2 col-form-label">ID Cliente</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="IdCliente" name="IdCliente" value="@Model.IdCliente" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="IdEmpleado" class="col-sm-2 col-form-label">ID Empleado</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="IdEmpleado" name="IdEmpleado" value="@Model.IdEmpleado" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="Fecha" class="col-sm-2 col-form-label">Fecha de Alquiler</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="Fecha" name="Fecha" value="@Model.Fecha.ToString("yyyy-MM-dd")" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="FechaDevolver" class="col-sm-2 col-form-label">Fecha de Devolución</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="FechaDevolver" name="FechaDevolver" value="@Model.FechaDevolver.ToString("yyyy-MM-dd")" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="Observaciones" class="col-sm-2 col-form-label">Observaciones</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="Observaciones" name="Observaciones" rows="3">@Model.Observaciones</textarea>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-purple btn-lg rounded-pill">
+                <i class="bi bi-save"></i> Guardar Cambios
+            </button>
+            <a href="@Url.Action("MostrarAlquiler")" class="btn btn-outline-secondary btn-lg rounded-pill ms-3">
+                <i class="bi bi-arrow-left"></i> Volver
+            </a>
+        </div>
+    </form>
+</div>
+
+<style>
+    /* Colores personalizados */
+    .bg-purple {
+        background-color: #6f42c1; /* Morado */
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+    }
+
+    .btn-outline-purple {
+        border-color: #6f42c1;
+        color: #6f42c1;
+    }
+
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+    .btn-outline-secondary {
+        border-color: #6c757d;
+        color: #6c757d;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(111, 66, 193, 0.1); /* Morado suave */
+    }
+
+    .shadow-lg {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded-pill {
+        border-radius: 50rem;
+    }
+</style>

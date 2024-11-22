@@ -14,6 +14,7 @@ namespace ProyectoFinalTecnicas.Controllers
         {
             _dataContext = dataContext;
         }
+        
         [HttpGet]
         public IActionResult Registrar()
         {
@@ -24,6 +25,8 @@ namespace ProyectoFinalTecnicas.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [HttpPost]
         [HttpPost]
         public IActionResult ValidarLogin(string email, string contrasena)
         {
@@ -44,6 +47,8 @@ namespace ProyectoFinalTecnicas.Controllers
                         {
                             if (reader.Read())
                             {
+                                // Guardar el nombre del usuario en la sesión
+                                HttpContext.Session.SetString("Usuario", reader["nombre"].ToString());
                                 return RedirectToAction("Index", "Home");
                             }
                         }
@@ -60,23 +65,24 @@ namespace ProyectoFinalTecnicas.Controllers
                         {
                             if (reader.Read())
                             {
+                                // Guardar el nombre del cliente en la sesión
+                                HttpContext.Session.SetString("Usuario", reader["nombre"].ToString());
                                 return RedirectToAction("InicioCliente", "Home");
                             }
                         }
                     }
                 }
 
-                // Si no se encuentra al usuario en ninguna tabla
                 TempData["Error"] = "Correo o contraseña incorrectos.";
                 return RedirectToAction("InicioSesion");
             }
             catch (Exception ex)
             {
-                // Manejo de errores
                 TempData["Error"] = $"Error al iniciar sesión: {ex.Message}";
                 return RedirectToAction("InicioSesion");
             }
         }
+
 
 
         // POST: Procesar el formulario y agregar el alumno a la base de datos
@@ -130,6 +136,9 @@ namespace ProyectoFinalTecnicas.Controllers
                 }
             }
         }
+
+
+
     }
 
 }

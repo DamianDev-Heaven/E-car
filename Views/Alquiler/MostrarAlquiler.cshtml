@@ -1,15 +1,25 @@
-﻿@{
+﻿@model List<ProyectoFinalTecnicas.Models.Alquiler>
+
+@{
     ViewData["Title"] = "Panel de Administración de Alquileres";
 }
 
 <div class="container my-5">
-    <!-- Header flotante -->
-    <div class="bg-primary text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+    <!-- Encabezado -->
+    <div class="bg-purple text-white text-center p-4 rounded shadow-lg" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
         <h1>@ViewData["Title"]</h1>
-        <p>Todos los Alquileres realizados con sus respectivos datos</p>
+        <p>Todos los alquileres realizados con sus respectivos datos</p>
     </div>
 
-@*     <!-- Mensajes de alerta -->
+    <!-- Formulario de búsqueda -->
+    <form method="get" class="d-flex align-items-center gap-2 mb-4">
+        <input type="text" name="clienteNombre" placeholder="Buscar por cliente" class="form-control rounded-pill" />
+        <button type="submit" class="btn btn-purple rounded-pill px-4">
+            <i class="bi bi-search"></i> Buscar
+        </button>
+    </form>
+
+    <!-- Mensajes de alerta -->
     @if (TempData["SuccessMessage"] != null)
     {
         <div class="alert alert-success text-center">
@@ -22,19 +32,21 @@
         <div class="alert alert-danger text-center">
             @ViewBag.ErrorMessage
         </div>
-    } *@
+    }
 
     <!-- Tabla de alquileres -->
     <div class="table-responsive">
-        <table class="table table-striped table-hover">
-            <thead class="table-dark">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-dark text-center">
                 <tr>
                     <th>Fecha</th>
                     <th>Fecha Devolver</th>
                     <th>ID Auto</th>
                     <th>ID Cliente</th>
                     <th>ID Empleado</th>
-                    <th>ID Factura</th>
+                    <th>Devuelto</th>
+                    <th>Fecha Devolución Real</th>
+                    <th>Observaciones</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -47,18 +59,34 @@
                         <td>@alquiler.IdAuto</td>
                         <td>@alquiler.IdCliente</td>
                         <td>@alquiler.IdEmpleado</td>
-                        <td>@alquiler.IdFactura</td>
-                        <td>
-                            <a href="@Url.Action("EditAlquiler", new { id = alquiler.IdAlquiler })"
-                               class="btn btn-outline-primary btn-sm me-2">
-                                <i class="bi bi-pencil"></i> Editar
-                            </a>
-                            <form asp-action="Delete" method="post" style="display:inline;">
-                                <input type="hidden" name="id" value="@alquiler.IdAlquiler" />
-                                <button type="submit" class="btn btn-outline-danger btn-sm">
-                                    <i class="bi bi-trash"></i> Eliminar
-                                </button>
-                            </form>
+                        <td>@(alquiler.Devuelto ? "Sí" : "No")</td>
+                        <td>@(alquiler.FechaDevolucionReal?.ToString("dd/MM/yyyy") ?? "No devuelto")</td>
+                        <td>@(string.IsNullOrEmpty(alquiler.Observaciones) ? "Sin observaciones" : alquiler.Observaciones)</td>
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <!-- Botón Devolver -->
+                                @if (!alquiler.Devuelto)
+                                {
+                                    <form action="@Url.Action("DevolverAuto", new { id = alquiler.IdAlquiler })" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('¿Estás seguro de que deseas devolver este alquiler?');">
+                                            <i class="bi bi-arrow-return-left"></i> Devolver
+                                        </button>
+                                    </form>
+                                }
+
+                                <!-- Botón Editar -->
+                                <a href="@Url.Action("EditAlquiler", new { id = alquiler.IdAlquiler })" class="btn btn-outline-warning btn-sm">
+                                    <i class="bi bi-pencil"></i> Editar
+                                </a>
+
+                                <!-- Botón Eliminar -->
+                                <form action="@Url.Action("Delete", new { id = alquiler.IdAlquiler })" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm"
+                                            onclick="return confirm('¿Estás seguro de que deseas eliminar este alquiler?');">
+                                        <i class="bi bi-trash"></i> Eliminar
+                                    </button>
+                                </form>
+                            </div>
                         </td>
                     </tr>
                 }
@@ -66,66 +94,45 @@
         </table>
     </div>
 
-    <!-- Botón agregar -->
-    <div class="text-end">
-        <a href="@Url.Action("CreateAlquiler", "Alquiler")" class="btn btn-primary btn-lg">
-            <i class="bi bi-file-plus"></i> Nuevo Alquiler
+    <!-- Botón agregar nuevo alquiler -->
+    <div class="text-center mt-3">
+        <a href="@Url.Action("CreateAlquiler")" class="btn btn-outline-primary">
+            <i class="bi bi-plus"></i> Agregar Alquiler
         </a>
     </div>
 </div>
 
-<!-- Estilos personalizados -->
 <style>
-    body {
-        background-color: #f4f4f9;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
+    /* Estilo general */
+    .bg-purple {
+        background-color: #6f42c1;
     }
 
-    h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
     }
 
-    .table-hover tbody tr:hover {
-        background-color: #e8f4ff;
+    .btn-outline-purple:hover {
+        background-color: #6f42c1;
+        color: white;
     }
 
-    .btn-outline-primary {
-        border-color: #007bff;
-        color: #007bff;
-    }
-
-        .btn-outline-primary:hover {
-            background-color: #007bff;
-            color: white;
-        }
-
-    .btn-outline-danger {
-        border-color: #dc3545;
-        color: #dc3545;
-    }
-
-        .btn-outline-danger:hover {
-            background-color: #dc3545;
-            color: white;
-        }
-
-    .btn-primary {
-        background-color: #0056b3;
-        border: none;
-    }
-
-        .btn-primary:hover {
-            background-color: #004085;
-        }
-
-    .alert {
-        max-width: 75%;
+    /* Tabla más amplia */
+    .table {
+        width: 100%; /* Ocupa todo el espacio */
         margin: auto;
-        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+        .table th,
+        .table td {
+            text-align: center;
+            vertical-align: middle; /* Alinea el contenido verticalmente */
+        }
+
+    /* Espaciado entre los botones */
+    .d-flex.gap-2 > * {
+        flex: 1 1 auto; /* Espaciado proporcional */
     }
 </style>
-
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

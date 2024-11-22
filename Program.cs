@@ -6,6 +6,13 @@ builder.Services.AddScoped<DataContext>();  // O puedes usar AddSingleton<DataCo
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tiempo de expiración de la sesión
+    options.Cookie.HttpOnly = true; // Seguridad adicional
+    options.Cookie.IsEssential = true; // Necesario para el funcionamiento
+});
+
 
 var app = builder.Build();
 
@@ -21,7 +28,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();  // Esta línea es la clave para habilitar sesiones
 app.UseAuthorization();
 
 //app.MapControllerRoute(

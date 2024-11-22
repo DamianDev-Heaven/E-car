@@ -6,15 +6,15 @@
 
 <div class="container my-5">
     <!-- Encabezado -->
-    <div class="bg-primary text-white text-center p-4 rounded glass shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+    <div class="bg-purple text-white text-center p-4 rounded shadow-lg" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
         <h1>@ViewData["Title"]</h1>
         <p>Gestione todos los clientes registrados fácilmente</p>
     </div>
 
     <!-- Formulario de búsqueda -->
     <form asp-action="BuscarClientes" method="get" class="d-flex align-items-center gap-2 mb-4">
-        <input type="text" name="criterio" placeholder="Buscar cliente por nombre o email..." class="form-control" />
-        <button type="submit" class="btn btn-primary">
+        <input type="text" name="criterio" placeholder="Buscar cliente por nombre o email..." class="form-control rounded-pill" />
+        <button type="submit" class="btn btn-purple rounded-pill px-4">
             <i class="bi bi-search"></i> Buscar
         </button>
     </form>
@@ -55,7 +55,7 @@
                                 <div class="d-flex justify-content-start align-items-center gap-2">
                                     <!-- Botón Editar -->
                                     <a href="@Url.Action("Edit", "Cliente", new { id = cliente.IdCliente })"
-                                       class="btn btn-outline-primary btn-sm">
+                                       class="btn btn-outline-purple btn-sm">
                                         <i class="bi bi-pencil-square"></i> Editar
                                     </a>
 
@@ -78,8 +78,45 @@
 
     <!-- Botón agregar nuevo cliente -->
     <div class="text-end">
-        <a href="@Url.Action("Registrar", "Login")" class="btn btn-primary btn-lg">
+        <a href="@Url.Action("Registrar", "Login")" class="btn btn-purple btn-lg rounded-pill">
             <i class="bi bi-person-plus"></i> Nuevo Cliente
         </a>
     </div>
 </div>
+
+<style>
+    /* Colores personalizados */
+    .bg-purple {
+        background-color: #6f42c1; /* Morado */
+    }
+
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+    }
+
+    .btn-outline-purple {
+        border-color: #6f42c1;
+        color: #6f42c1;
+    }
+
+        .btn-outline-purple:hover {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+    /* Efectos hover */
+    .table-hover tbody tr:hover {
+        background-color: rgba(111, 66, 193, 0.1); /* Morado suave */
+    }
+
+    /* Sombras */
+    .shadow-lg {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Bordes redondeados */
+    .rounded-pill {
+        border-radius: 50rem;
+    }
+</style>

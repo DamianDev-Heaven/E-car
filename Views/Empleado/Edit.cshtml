@@ -2,7 +2,7 @@
 
 <div class="container my-5">
     <!-- Header flotante -->
-    <div class="bg-primary text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
+    <div class="bg-purple text-white text-center p-4 rounded shadow" style="max-width: 90%; margin: auto; margin-bottom: 30px;">
         <h1>Editar Empleado</h1>
         <p>Actualiza los datos del empleado seleccionado.</p>
     </div>
@@ -31,7 +31,6 @@
             <input type="email" class="form-control" id="Email" name="Email" value="@Model?.Email" required />
         </div>
 
-        <!-- Campo para Contraseña -->
         <div class="mb-3">
             <label for="Contrasena" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="Contrasena" name="Contrasena" value="@Model?.Contrasena"
@@ -40,45 +39,34 @@
         </div>
 
         <div class="text-center">
-            <button type="submit" class="btn btn-success btn-lg">
+            <button type="submit" class="btn btn-purple btn-lg rounded-pill">
                 <i class="bi bi-save"></i> Guardar Cambios
             </button>
-            <a href="@Url.Action("Index", "Empleado")" class="btn btn-outline-secondary btn-lg">
+            <a href="@Url.Action("Index", "Empleado")" class="btn btn-outline-secondary btn-lg rounded-pill">
                 <i class="bi bi-arrow-left-circle"></i> Volver
             </a>
         </div>
     </form>
 </div>
 
-
-<!-- Estilos personalizados -->
 <style>
-    body {
-        background-color: #f4f4f9;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
+    /* Colores personalizados */
+    .bg-purple {
+        background-color: #6f42c1;
     }
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 700;
+    .btn-purple {
+        background-color: #6f42c1;
+        color: white;
     }
-
-    form {
-        border: 1px solid #ddd;
-    }
-
-    .btn-success {
-        background-color: #28a745;
-        border: none;
-    }
-
-        .btn-success:hover {
-            background-color: #218838;
-        }
 
     .btn-outline-secondary:hover {
         background-color: #6c757d;
         color: white;
+    }
+
+    .btn-outline-secondary {
+        border-color: #6c757d;
+        color: #6c757d;
     }
 </style>

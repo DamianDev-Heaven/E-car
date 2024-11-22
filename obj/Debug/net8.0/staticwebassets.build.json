@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rvTVwaGw64gKU3vBSCkqZGhocCAe5xQb0bOkL8eHfqY=",
+  "Hash": "k4QFqe8NyoVNQYDVfT6/6+Qp2QVJATY9vAQyXKvQeAk=",
   "Source": "ProyectoFinalTecnicas",
   "BasePath": "_content/ProyectoFinalTecnicas",
   "Mode": "Default",
@@ -794,6 +794,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo-audi.png"
+    },
+    {
+      "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\LOGO-ECAR.png",
+      "SourceId": "ProyectoFinalTecnicas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\",
+      "BasePath": "_content/ProyectoFinalTecnicas",
+      "RelativePath": "images/LOGO-ECAR.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\LOGO-ECAR.png"
     },
     {
       "Identity": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-hyundai.png",
