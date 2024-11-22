@@ -24,6 +24,60 @@ namespace ProyectoFinalTecnicas.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult ValidarLogin(string email, string contrasena)
+        {
+            try
+            {
+                using (var connection = _dataContext.GetConnection())
+                {
+                    connection.Open();
+
+                    // Verificar si el usuario es empleado
+                    string queryEmpleado = "SELECT * FROM empleados WHERE email = @Email AND contrasena = @Contrasena";
+                    using (var command = new MySqlCommand(queryEmpleado, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Contrasena", contrasena);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return RedirectToAction("Index", "Home");
+                            }
+                        }
+                    }
+
+                    // Verificar si el usuario es cliente
+                    string queryCliente = "SELECT * FROM clientes WHERE email = @Email AND contrasena = @Contrasena";
+                    using (var command = new MySqlCommand(queryCliente, connection))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Contrasena", contrasena);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return RedirectToAction("InicioCliente", "Home");
+                            }
+                        }
+                    }
+                }
+
+                // Si no se encuentra al usuario en ninguna tabla
+                TempData["Error"] = "Correo o contraseña incorrectos.";
+                return RedirectToAction("InicioSesion");
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                TempData["Error"] = $"Error al iniciar sesión: {ex.Message}";
+                return RedirectToAction("InicioSesion");
+            }
+        }
+
 
         // POST: Procesar el formulario y agregar el alumno a la base de datos
         [HttpPost]
@@ -63,5 +117,5 @@ namespace ProyectoFinalTecnicas.Controllers
             return View(nuevoCliente);
         }
     }
-}
 
+}

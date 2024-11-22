@@ -24,7 +24,7 @@ namespace ProyectoFinalTecnicas.Controllers
             {
                 connection.Open();
 
-                // Consulta para obtener los datos de alquiler, auto, cliente, empleado
+                // Query to get rental data
                 string query = @"
                     SELECT a.id_alquiler, a.id_auto, a.id_cliente, a.id_empleado, a.id_factura, 
                            a.fecha, a.fecha_devolver, a.devuelto, a.fecha_devolucion_real, a.observaciones, 
@@ -33,7 +33,7 @@ namespace ProyectoFinalTecnicas.Controllers
                     JOIN autos au ON a.id_auto = au.id_auto
                     JOIN clientes cl ON a.id_cliente = cl.id_cliente
                     JOIN empleados emp ON a.id_empleado = emp.id_empleado
-                    WHERE a.devuelto = 0";  // Solo alquileres no devueltos
+                    WHERE a.devuelto = 0";  // Only non-returned rentals
 
                 var command = new MySqlCommand(query, connection);
                 using (var reader = command.ExecuteReader())
@@ -63,46 +63,36 @@ namespace ProyectoFinalTecnicas.Controllers
 
             return View(devoluciones);
         }
-
         // Acción para procesar la devolución
-        [HttpPost]
-        public IActionResult ProcesarDevolucion(int idAlquiler, int idAuto, DateTime fechaDevolucionReal, string observaciones)
+        public IActionResult AutocompletarCliente(string term)
         {
+            List<object> clientes = new List<object>();
+
             using (var connection = _dataContext.GetConnection())
             {
                 connection.Open();
 
-                // Actualizamos la tabla de alquilados
-                string queryAlquiler = @"
-            UPDATE alquilados
-            SET fecha_devolucion_real = @fechaDevolucionReal, 
-                observaciones = @observaciones, 
-                devuelto = 1
-            WHERE id_alquiler = @idAlquiler";
+                string query = @"
+                    SELECT id_cliente, nombre, dui
+                    FROM clientes
+                    WHERE nombre LIKE @term OR dui LIKE @term";
+                var command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@term", "%" + term + "%");
 
-                var commandAlquiler = new MySqlCommand(queryAlquiler, connection);
-                commandAlquiler.Parameters.AddWithValue("@idAlquiler", idAlquiler);
-                commandAlquiler.Parameters.AddWithValue("@fechaDevolucionReal", fechaDevolucionReal);
-                commandAlquiler.Parameters.AddWithValue("@observaciones", observaciones);
-
-                // Ejecutar la actualización del alquiler
-                commandAlquiler.ExecuteNonQuery();
-
-                // Actualizamos el estado del auto a 1 (libre)
-                string queryAuto = @"
-            UPDATE autos
-            SET estado = 1
-            WHERE id_auto = @idAuto";
-
-                var commandAuto = new MySqlCommand(queryAuto, connection);
-                commandAuto.Parameters.AddWithValue("@idAuto", idAuto);
-
-                // Ejecutar la actualización del auto
-                commandAuto.ExecuteNonQuery();
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        clientes.Add(new
+                        {
+                            label = $"{reader.GetString("nombre")} ({reader.GetString("dui")})",
+                            id = reader.GetInt32("id_cliente")
+                        });
+                    }
+                }
             }
 
-            return RedirectToAction("Devoluciones");
+            return Json(clientes);
         }
-
     }
 }

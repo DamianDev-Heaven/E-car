@@ -1,0 +1,49 @@
+﻿@model Cliente
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+    Layout = "_LoginLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body style="display:flex; align-items:center; justify-content:center;">
+
+    <div class="register-page">
+        <div class="register-form-container">
+            <form method="post" action="@Url.Action("Update", "Cliente")" class="register-form">
+                <h2>Editar Cliente</h2>
+
+                <input type="text" name="Nombre" placeholder="Nombre *" value="@Model.Nombre" required />
+                <input type="text" name="Direccion" placeholder="Dirección *" value="@Model.Direccion" required />
+                <input type="text" name="Telefono" placeholder="Teléfono *" value="@Model.Telefono" required />
+                <input type="text" name="DUI" placeholder="DUI *" value="@Model.DUI" required />
+                <input type="email" name="Email" placeholder="Email *" value="@Model.Email" required />
+                <input type="password" name="Contrasena" placeholder="Contraseña *" value="@Model.Contrasena" required />
+
+                <input type="hidden" name="IdCliente" value="@Model.IdCliente" />
+
+                <button type="submit" class="btn-register">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Actualizar Cliente
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -26,5 +26,10 @@ namespace ProyectoFinalTecnicas.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
+        [Required]
+        [EmailAddress]
+
+        public string? Contrasena { get; set; }
     }
 }
