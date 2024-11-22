@@ -9,19 +9,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
+    <style>
+        /* Estilo general */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(white, #b200ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            height: 100%;
+        }
 
-<body style="display:flex; align-items:center; justify-content:center;">
-    <div class="register-page">
-        <div class="register-form-container">
-            <form class="register-form" asp-action="ValidarLogin" asp-controller="Login" method="post">
+        /* Contenedor principal */
+        .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;  /* Asegura que el contenedor esté centrado en cualquier dispositivo */
+        }
+
+        .login-form-container {
+            text-align: center;
+            width: 100%;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .login-form-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+        }
+
+        .login-form-container h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .login-form-container .error-message {
+            color: red;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Botón */
+        .btn-login {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fabeef;
+            background: transparent;
+            border: 1px solid #fabeef;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+
+        .btn-login:hover {
+            background: #fabeef;
+            color: #fff;
+            box-shadow: 0 0 5px #fabeef, 0 0 25px #fabeef, 0 0 50px #fabeef;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-form-container">
+            <form class="login-form" asp-action="ValidarLogin" asp-controller="Login" method="post">
                 <h2>Inicio de Sesión</h2>
 
                 <!-- Mensaje de error -->
                 @if (TempData["Error"] != null)
                 {
-                    <p class="error-message">@TempData["Error"]</p>
+                        <p class="error-message">@TempData["Error"]</p>
                 }
 
                 <!-- Campos del formulario -->
@@ -29,20 +103,9 @@
                 <input type="password" name="contrasena" placeholder="Contraseña *" required />
 
                 <!-- Botón de inicio de sesión -->
-                <button type="submit" class="btn-register">Iniciar Sesión</button>
+                <button type="submit" class="btn-login">Iniciar Sesión</button>
             </form>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/main.js"></script>
-
-    <style>
-        .error-message {
-            color: red;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-        }
-    </style>
 </body>
 </html>

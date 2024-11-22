@@ -1,0 +1,149 @@
+﻿/* Estilos originales */
+.contenido {
+    background-color: #f2e1f9;
+    bottom: 5%;
+    position: relative;
+}
+
+    .contenido h1 {
+        position: absolute;
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+
+    .contenido span {
+        position: absolute;
+        color: rebeccapurple;
+        font-size: 65px
+    }
+
+    .contenido p {
+        position: absolute;
+        top: 50%;
+        justify-content: normal;
+        padding-left: 20px;
+    }
+
+    .contenido img {
+        width: 50%;
+        margin-left: 55%;
+        top: 30px;
+    }
+
+.auto-image {
+    display: block;
+    width: 50%;
+}
+
+.selectores {
+    position: absolute;
+    top: 65%;
+    display: flex;
+    margin: 40px;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    left: 26%;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+    .selectores select {
+        width: 90%;
+    }
+
+    .selectores button {
+        margin-top: 33px;
+        margin-left: 5px;
+    }
+
+.input-group {
+    margin-top: 28px;
+    margin-right: 5px;
+}
+
+.car-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 25px; /* Espaciado entre las imágenes */
+    display: flex;
+}
+
+.marcas-image {
+    margin-top: 7%;
+    justify-content: center;
+    background-color: #f2e1f9;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.btn-card {
+    background: linear-gradient(135deg, #f2e1f9, #d3aff5);
+    padding: 10px;
+    position: absolute;
+    top: 84%;
+    left: 59%;
+    border-radius: 10px;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease; /* Suaviza el cambio de degradado */
+}
+
+    .btn-card:hover {
+        background: linear-gradient(135deg, #d3aff5, #a374f9);
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+        cursor: pointer; /* Cambia el cursor a pointer */
+    }
+
+.card-auto {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 7px 7px 13px rgba(242, 225, 249, 1), /* Sombra principal, más intensa */
+    4px 8px 20px rgba(242, 225, 249, 0.7), /* Sombra intermedia */
+    0px 8px 40px rgba(242, 225, 249, 0.3); /* Sombra difusa */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.img-volante {
+    width: 30%;
+    margin-right: 40px;
+    border-radius: 15px;
+}
+
+.container-carac-g {
+    margin-top: 15%;
+    display: flex;
+}
+
+.container-c {
+    justify-content: center;
+}
+
+.caracteristicas {
+    padding: 40px;
+    background-color: #f2e1f9;
+    border-radius: 15px;
+    text-align: center;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+.section-c {
+    margin: 20px;
+}
+
+.section-carac {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    border-radius: 15px;
+}

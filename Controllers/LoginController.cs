@@ -83,38 +83,52 @@ namespace ProyectoFinalTecnicas.Controllers
         [HttpPost]
         public IActionResult Registrar(Cliente nuevoCliente)
         {
-            if (ModelState.IsValid)
+            using (var connection = _dataContext.GetConnection())
             {
                 try
                 {
-                    using (var connection = _dataContext.GetConnection())
+                    connection.Open();
+                    Console.WriteLine("Conexión abierta exitosamente.");
+
+                    // Consulta SQL para insertar un nuevo cliente
+                    string query = @"
+         INSERT INTO clientes (nombre, direccion, telefono, dui, email, contrasena) 
+         VALUES (@Nombre, @Direccion, @Telefono, @DUI, @Email, @Contrasena)";
+
+                    var command = new MySqlCommand(query, connection);
+
+                    // Asignar valores a los parámetros de la consulta
+                    command.Parameters.AddWithValue("@Nombre", nuevoCliente.Nombre);
+                    command.Parameters.AddWithValue("@Direccion", nuevoCliente.Direccion);
+                    command.Parameters.AddWithValue("@Telefono", nuevoCliente.Telefono);
+                    command.Parameters.AddWithValue("@DUI", nuevoCliente.DUI);
+                    command.Parameters.AddWithValue("@Email", nuevoCliente.Email);
+                    command.Parameters.AddWithValue("@Contrasena", nuevoCliente.Contrasena);
+
+                    // Ejecutar la consulta
+                    int filasAfectadas = command.ExecuteNonQuery();
+
+                    if (filasAfectadas > 0)
                     {
-                        connection.Open();
-
-                        var command = new MySqlCommand(
-                            "INSERT INTO clientes (nombre, direccion, telefono, dui, email) VALUES (@nombre,@direccion, @telefono, @dui, @email)",
-                            connection
-                        );
-
-                        command.Parameters.AddWithValue("@nombre", nuevoCliente.Nombre);
-                        command.Parameters.AddWithValue("@direccion", nuevoCliente.Direccion);
-                        command.Parameters.AddWithValue("@telefono", nuevoCliente.Telefono);
-                        command.Parameters.AddWithValue("@dui", nuevoCliente.DUI);
-                        command.Parameters.AddWithValue("@email", nuevoCliente.Email);
-
-
-                        command.ExecuteNonQuery();
+                        // Redirigir en caso de éxito
+                        TempData["SuccessMessage"] = "Cliente agregado exitosamente.";
+                        return RedirectToAction("Registrar");
                     }
-
-                    // Redirige a la lista de alumnos después de agregar
-                    //return RedirectToAction("Index");
+                    else
+                    {
+                        // En caso de que no se agregue el cliente
+                        ViewBag.ErrorMessage = "No se pudo agregar el cliente. Intenta nuevamente.";
+                        return View("Registrar", nuevoCliente); // Regresar a la vista con el modelo actual
+                    }
                 }
                 catch (Exception ex)
                 {
-                    return BadRequest($"Error al agregar el cliente: {ex.Message}");
+                    // Manejo de errores
+                    Console.WriteLine("Error: " + ex.Message);
+                    ViewBag.ErrorMessage = "Error al agregar el cliente: " + ex.Message;
+                    return View("Registrar", nuevoCliente); // Regresar a la vista con el modelo actual
                 }
             }
-            return View(nuevoCliente);
         }
     }
 

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ProyectoFinalTecnicas.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\Imagen2222.png",
       "PackagePath": "staticwebassets\\css\\images\\Imagen2222.png"
     },
@@ -43,10 +47,6 @@
     {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\images\\toyota.jpg",
       "PackagePath": "staticwebassets\\css\\images\\toyota.jpg"
-    },
-    {
-      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\css\\site.css",
@@ -153,6 +153,38 @@
       "PackagePath": "staticwebassets\\images\\hyunday.jpg"
     },
     {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\jeep.png",
+      "PackagePath": "staticwebassets\\images\\jeep.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-audi.png",
+      "PackagePath": "staticwebassets\\images\\logo-audi.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-hyundai.png",
+      "PackagePath": "staticwebassets\\images\\logo-hyundai.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-kia.png",
+      "PackagePath": "staticwebassets\\images\\logo-kia.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-mazda.png",
+      "PackagePath": "staticwebassets\\images\\logo-mazda.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-mercedez.png",
+      "PackagePath": "staticwebassets\\images\\logo-mercedez.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-nissan.png",
+      "PackagePath": "staticwebassets\\images\\logo-nissan.png"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\logo-toyota.png",
+      "PackagePath": "staticwebassets\\images\\logo-toyota.png"
+    },
+    {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\mazda.jpg",
       "PackagePath": "staticwebassets\\images\\mazda.jpg"
     },
@@ -163,6 +195,10 @@
     {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\toyota.jpg",
       "PackagePath": "staticwebassets\\images\\toyota.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\images\\volante.jpg",
+      "PackagePath": "staticwebassets\\images\\volante.jpg"
     },
     {
       "Id": "C:\\Users\\DamianDev\\Desktop\\ProyectoFinal (1)\\ProyectoFinal\\ProyectoFinalTecnicas\\ProyectoFinalTecnicas\\wwwroot\\js\\site.js",

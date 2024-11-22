@@ -63,8 +63,45 @@ namespace ProyectoFinalTecnicas.Controllers
 
             return View(devoluciones);
         }
-        // Acción para procesar la devolución
-        public IActionResult AutocompletarCliente(string term)
+
+        public IActionResult ProcesarDevolucion(int idAlquiler, int idAuto, DateTime fechaDevolucionReal, string observaciones)
+        {
+            using (var connection = _dataContext.GetConnection())
+            {
+                connection.Open();
+
+                // Actualizamos la tabla de alquilados
+                string queryAlquiler = @"
+            UPDATE alquilados
+            SET fecha_devolucion_real = @fechaDevolucionReal, 
+                observaciones = @observaciones, 
+                devuelto = 1
+            WHERE id_alquiler = @idAlquiler";
+                var commandAlquiler = new MySqlCommand(queryAlquiler, connection);
+                commandAlquiler.Parameters.AddWithValue("@idAlquiler", idAlquiler);
+                commandAlquiler.Parameters.AddWithValue("@fechaDevolucionReal", fechaDevolucionReal);
+                commandAlquiler.Parameters.AddWithValue("@observaciones", observaciones);
+                // Ejecutar la actualización del alquiler
+                commandAlquiler.ExecuteNonQuery();
+                // Actualizamos el estado del auto a 1 (libre)
+                string queryAuto = @"
+            UPDATE autos
+            SET estado = 1
+            WHERE id_auto = @idAuto";
+                var commandAuto = new MySqlCommand(queryAuto, connection);
+                commandAuto.Parameters.AddWithValue("@idAuto", idAuto);
+
+                // Ejecutar la actualización del auto
+                commandAuto.ExecuteNonQuery();
+            }
+
+            return RedirectToAction("Devoluciones");
+        }
+
+
+
+// Acción para procesar la devolución
+public IActionResult AutocompletarCliente(string term)
         {
             List<object> clientes = new List<object>();
 
